@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Startup Dose – Coming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root {
+            --neon-blue: #1fd2ff;
+            --neon-yellow: #ffc531;
+            --bg: #020818;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--bg);
+            color: var(--neon-blue);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        .wrapper {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 0 12px rgba(31, 210, 255, 0.9));
+        }
+
+        .logo-pill {
+            width: 70px;
+            height: 120px;
+            border-radius: 40px;
+            border: 4px solid var(--neon-blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow:
+                0 0 12px rgba(31, 210, 255, 0.9),
+                0 0 32px rgba(31, 210, 255, 0.5);
+        }
+
+        .logo-pill span {
+            color: var(--neon-yellow);
+            font-size: 42px;
+            line-height: 1;
+            text-shadow:
+                0 0 8px rgba(255, 197, 49, 0.8),
+                0 0 22px rgba(255, 197, 49, 0.9);
+        }
+
+        .logo-text {
+            text-align: left;
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-shadow:
+                0 0 10px rgba(31, 210, 255, 0.9),
+                0 0 30px rgba(31, 210, 255, 0.7);
+        }
+
+        .logo-text span {
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+            text-shadow:
+                0 0 10px rgba(31, 210, 255, 0.9),
+                0 0 25px rgba(31, 210, 255, 0.6);
+        }
+
+        p {
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                flex-direction: column;
+            }
+
+            .logo-text {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                letter-spacing: 0.16em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="assets/startup-dose-logo.png" alt="Startup Dose logo" style="height:150px;">
+        </div>
+
+        <!-- Coming soon text -->
+        <h1>COMING SOON</h1>
+        <p>Your daily fix of tech startups.</p>
+    </div>
+</body>
+
+</html>
